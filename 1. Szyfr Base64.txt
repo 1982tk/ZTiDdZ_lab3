@@ -1,0 +1,18 @@
+#szyfrowanie Base64 w Python
+
+
+import base64
+
+tresc = "test base64"
+tresc_b = tresc.encode('ascii')
+base64_b = base64.b64encode(tresc_b)
+tresc_base64 = base64_b.decode('ascii')
+
+print(tresc_base64)
+
+
+
+
+
+#kodowanie i dekodowanie online ==> phttps://www.base64decode.org
+#kompilator Pyton online ==> https://www.online-python.com
