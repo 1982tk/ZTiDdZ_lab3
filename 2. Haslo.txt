@@ -1,0 +1,24 @@
+#funkcja w Python tworzaca haslo z 10 znakow , uwzgledniajaca male i duze litery, cyfry, znaki specjalne.
+
+import random
+import string
+
+
+pass_length = 10                  
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+num = string.digits
+symbols = string.punctuation
+
+
+all = lower + upper + num + symbols
+
+temp = random.sample(all,pass_length)
+
+
+password = ""
+for i in range(pass_length):
+    password = "".join(temp)
+
+
+print("Your random password is:  " + password)
